@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Hangman</h1>
+    <p class="heading">Guess the hidden word - Enter a letter</p>
+    <div class="mid-container">
+    <svg height="250" width="200" class="figure-container">
+      <line x1="60" y1="20" x2="140" y2="20"></line>
+      <!--Horizontal Line in Pole-->
+      <line x1="140" y1="20" x2="140" y2="60"></line>
+      <!--Vertical Line in pole to hold the head-->
+      <line x1="60" y1="20" x2="60" y2="240"></line>
+      <!--Long Vertical Pole-->
+      <line x1="20" y1="240" x2="100" y2="240"></line>
+      <!--Horizontal Pole Stand-->
+      <circle cx="140" cy="80" r="20" class="hide head"></circle>
+      <!--Head-->
+      <line x1="140" y1="100" x2="140" y2="180" class="hide body"></line>
+      <!--Body-->
+      <line x1="140" y1="120" x2="100" y2="150" class="hide left-hand"></line>
+      <!--Left Hand-->
+      <line x1="140" y1="120" x2="180" y2="150" class="hide right-hand"></line>
+      <!--Right Hand-->
+      <line x1="140" y1="180" x2="100" y2="210" class="hide left-leg"></line>
+      <!--Left Leg-->
+      <line x1="140" y1="180" x2="180" y2="210" class="hide right-leg"></line>
+      <!--Rigth Leg-->
+    </svg>
+    <div class="puzzle-container">
+      <div class="puzzle" id="puzzle"></div>
+      <p id="guesses"></p>
+    </div>
+    </div>
+    <div class="alphabet-container">
+      <button class="a" value="a">A</button>
+      <button class="b" value="b">B</button>
+      <button class="c" value="c">C</button>
+      <button class="d" value="d">D</button>
+      <button class="e" value="e">E</button>
+      <button class="f" value="f">F</button>
+      <button class="g" value="g">G</button>
+      <button class="h" value="h">H</button>
+      <button class="i" value="i">I</button>
+      <button class="j" value="j">J</button>
+      <button class="k" value="k">K</button>
+      <button class="l" value="l">L</button>
+      <button class="m" value="m">M</button>
+      <button class="n" value="n">N</button>
+      <button class="o" value="o">O</button>
+      <button class="p" value="p">P</button>
+      <button class="q" value="q">Q</button>
+      <button class="r" value="r">R</button>
+      <button class="s" value="s">S</button>
+      <button class="t" value="t">T</button>
+      <button class="u" value="u">U</button>
+      <button class="v" value="v">V</button>
+      <button class="w" value="w">W</button>
+      <button class="x" value="x">X</button>
+      <button class="y" value="y">Y</button>
+      <button class="z" value="z">Z</button>
+    </div>
+    <div class="reset">
+      <button id="reset">New Puzzle</button>
+    </div>
+    <script src="public/bundle.js"></script>
+  </body>
+</html>
